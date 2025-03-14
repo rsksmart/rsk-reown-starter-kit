@@ -11,7 +11,7 @@ export function Wagmi(): JSX.Element {
           <span className="bg-fuchsia-500 pt-2 px-2">Interaction</span>
           <span className="mt-2">
             <span className="bg-green-500 pt-5 px-2">with</span>{" "}
-            <span className="bg-green-500 pt-5 px-2">Wagmi</span>
+            <span className="bg-green-500 pt-5 px-2">Reown-Wagmi</span>
           </span>
         </h1>
       </div>
