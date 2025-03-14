@@ -22,7 +22,7 @@ const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/179229932']
 }
 
-const networks = [rootstock, rootstockTestnet]
+const networks = [rootstockTestnet, rootstock]
 
 // 4. Create Wagmi Adapter
 const wagmiAdapter = new WagmiAdapter({
@@ -37,7 +37,7 @@ const wagmiAdapter = new WagmiAdapter({
 // 5. Create modal
 createAppKit({
   adapters: [wagmiAdapter],
-  networks : [rootstock, rootstockTestnet],
+  networks : [rootstockTestnet, rootstock],
   projectId,
   metadata,
   features: {

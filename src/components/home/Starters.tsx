@@ -19,9 +19,9 @@ export default function Starters(): JSX.Element {
 
 const starters: StarterProps[] = [
   {
-    name: "Contract Interaction with Wagmi Starter Kit",
+    name: "Contract Interaction with Reown Starter Kit",
     description:
-      "Get started with contract interaction using the Wagmi library. This starter kit includes a pre-configured Wagmi setup, sample contract interactions, and more.",
+      "Get started with contract interaction using Reown and the Wagmi library. This starter kit includes a pre-configured Reown-Wagmi setup, sample contract interactions, and more.",
     link: "/wagmi",
   },
   {

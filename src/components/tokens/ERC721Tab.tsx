@@ -1,8 +1,5 @@
 import Button from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
-// import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-// import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 import { useAccount, useWriteContract, useReadContract } from "wagmi";
@@ -10,7 +7,7 @@ import { abi } from "@/assets/abis/ERC721abi";
 import { ERC721_ADDRESS } from "@/lib/constants";
 import Loader from "@/components/ui/loader";
 import { waitForTransactionReceipt } from "wagmi/actions";
-// import { rainbowkitConfig } from "@/config/rainbowkitConfig";
+import { config } from "@/config/config";
 
 export default function ERC721Tab(): JSX.Element {
   const { toast } = useToast();
@@ -35,10 +32,10 @@ export default function ERC721Tab(): JSX.Element {
         functionName: "safeMint",
         args: [address],
       });
-      // await waitForTransactionReceipt(rainbowkitConfig, {
-      //   confirmations: 1,
-      //   hash: txHash,
-      // });
+      await waitForTransactionReceipt(config, {
+        confirmations: 1,
+        hash: txHash,
+      });
       toast({
         title: "Successfully minted NFT",
         description: "A NRSK NFT has been minted to your wallet",

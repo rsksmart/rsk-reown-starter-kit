@@ -1,6 +1,5 @@
 import Button from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-// import { ConnectButton } from "@rainbow-me/rainbowkit";
 import {
   Select,
   SelectContent,
@@ -17,7 +16,7 @@ import { ERC1155_ADDRESS } from "@/lib/constants";
 import Loader from "@/components/ui/loader";
 import { abi } from "@/assets/abis/ERC1155abi";
 import { waitForTransactionReceipt } from "wagmi/actions";
-// import { rainbowkitConfig } from "@/config/rainbowkitConfig";
+import { config } from "@/config/config";
 
 export default function ERC1155Tab(): JSX.Element {
   const { toast } = useToast();
@@ -55,10 +54,10 @@ export default function ERC1155Tab(): JSX.Element {
         functionName: "mint",
         args: [address, value],
       });
-      // await waitForTransactionReceipt(rainbowkitConfig, {
-      //   confirmations: 1,
-      //   hash: txHash,
-      // });
+      await waitForTransactionReceipt(config, {
+        confirmations: 1,
+        hash: txHash,
+      });
 
       toast({
         title: "Successfully minted",

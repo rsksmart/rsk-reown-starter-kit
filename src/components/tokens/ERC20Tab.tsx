@@ -1,4 +1,3 @@
-// import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Button from "@/components/ui/button";
 import { useState } from "react";
@@ -7,8 +6,8 @@ import { useAccount, useReadContract, useWriteContract } from "wagmi";
 import { abi } from "@/assets/abis/ERC20abi";
 import { useToast } from "@/components/ui/use-toast";
 import { ERC20_ADDRESS } from "@/lib/constants";
-// import { rainbowkitConfig } from "@/config/rainbowkitConfig";
 import { waitForTransactionReceipt } from "wagmi/actions";
+import { config } from "@/config/config";
 
 export default function ERC20Tab(): JSX.Element {
   const { toast } = useToast();
@@ -34,10 +33,10 @@ export default function ERC20Tab(): JSX.Element {
         args: [address, 100],
       });
 
-      // await waitForTransactionReceipt(rainbowkitConfig, {
-      //   confirmations: 1,
-      //   hash: txHash,
-      // });
+      await waitForTransactionReceipt(config, {
+        confirmations: 1,
+        hash: txHash,
+      });
 
       setLoading(false);
       toast({
