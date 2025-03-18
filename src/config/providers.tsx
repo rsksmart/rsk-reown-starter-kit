@@ -7,7 +7,6 @@ import { rootstock, rootstockTestnet } from '@reown/appkit/networks'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 
-// import { rainbowkitConfig } from "./rainbowkitConfig";
 // 0. Setup queryClient
 const queryClient = new QueryClient()
 
