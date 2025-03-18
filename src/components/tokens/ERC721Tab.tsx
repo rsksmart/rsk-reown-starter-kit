@@ -74,7 +74,7 @@ export default function ERC721Tab(): JSX.Element {
             <span className="font-neueMachinaBold px-2 pt-[5px] text-black rounded-full bg-orange-400 grid place-items-center">
               02
             </span>
-            <p>Enter the NFT metadata and the claim your NFT</p>
+            <p>Enter the NFT metadata and claim your NFT</p>
           </div>
 
           <Button

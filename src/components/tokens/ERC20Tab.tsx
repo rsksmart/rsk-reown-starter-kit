@@ -78,9 +78,7 @@ export default function ERC20Tab(): JSX.Element {
           <span className="font-neueMachinaBold px-2 pt-[5px] text-black rounded-full bg-orange-400 grid place-items-center">
             02
           </span>
-          <p>
-            Press the button for the tRSK tokens to be deposited in your wallet.
-          </p>
+          <p>Press the button to receive tRSK tokens in your wallet</p>
         </div>
         <div className="text-center z-[-10]">
           <Button disabled={loading || !address} onClick={mintTokens}>
