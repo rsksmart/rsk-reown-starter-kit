@@ -51,11 +51,11 @@ cd rsk-reown-starter-kit
 Copy the `.env.example` file and rename it to `.env`, and add a variables:
 
 ```shell
-VITE_WC_PROJECT_ID='your Reown (prev wallet connect) key'
+VITE_REOWN_PROJECT_ID='your Reown (prev wallet connect) key'
 VITE_BUNDLER_API_KEY='etherspot_public_key'
 VITE_CUSTOM_BUNDLER_URL=https://rootstocktestnet-bundler.etherspot.io/
 ```
-> **Note**: Go to [Reown Dashboard](https://cloud.reown.com/sign-in) and create a project, copy the project ID and paste it on `VITE_WC_PROJECT_ID`.
+> **Note**: Go to [Reown Dashboard](https://cloud.reown.com/sign-in) and create a project, copy the project ID and paste it on `VITE_REOWN_PROJECT_ID`.
 
 #### 3. Install Dependencies
 
