@@ -25,7 +25,7 @@
     "graphql": "^16.8.1",
     "lucide-react": "^0.378.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^19.0.0",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.23.0",
     "subscriptions-transport-ws": "^0.11.0",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/node": "^20.12.8",
     "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
+    "@types/react-dom": "^19.0.4",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
     "@typescript-eslint/parser": "^7.7.0",
     "@vitejs/plugin-react": "^4.2.1",
